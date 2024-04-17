@@ -1,8 +1,8 @@
 ---
 title: "The Cancer Genomics Atlas (TCGA) and other cancer genomics resources"
-# subtitle: "subtitle"
+# subtitle: "https://mdozmorov.github.io/2024-04-19.TCGA"
 author: "Mikhail Dozmorov, Ph.D."
-# institute: "Virginia Commonwealth University"
+institute: "https://mdozmorov.github.io/2024-04-19.TCGA"
 date: "04-19-2024"
 output:
   xaringan::moon_reader:
@@ -13,6 +13,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+  url: 
 editor_options: 
   chunk_output_type: console
 ---
@@ -441,6 +442,7 @@ https://github.com/mdozmorov/Cancer_notes
 <br>
 mdozmorov@vcu.edu
 <br>
+https://mdozmorov.github.io/2024-04-19.TCGA
 <br>
 
 <div class="my-footer">
