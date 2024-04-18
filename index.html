@@ -30,19 +30,19 @@ class: center, middle, inverse, title-slide
 
 
 
-## The Cancer Genome Atlas (TCGA)
+## The Cancer Genome Atlas (TCGA) cancergenome.nih.gov
 
 - Started December 13, 2005, phase II in 2009, ended in 2014
 
 - Mission - to accelerate our understanding of the molecular basis of cancer through the application of genome analysis technologies, including large-scale genome sequencing
 
 - Data generation
+    - Molecular information derived from the samples (e.g. mRNA/miRNA expression, protein expression, copy number, etc.)
     - Clinical information about participants
     - Metadata about the samples (e.g. the weight of a sample portion, etc.)
     - Histopathology slide images from sample portions
-    - Molecular information derived from the samples (e.g. mRNA/miRNA expression, protein expression, copy number, etc.)
 
-https://cancergenome.nih.gov
+.center[ &lt;img src="img/tcga_logo.png" height = 50&gt; ]
 
 ---
 ## TCGA by the numbers
@@ -114,19 +114,42 @@ https://xenabrowser.net/datapages/?dataset=TCGA.BRCA.sampleMap/BRCA_clinicalMatr
 --&gt;
 
 ---
-## Two types of TCGA Data
+## Two tiers of TCGA Data
 
-- **Open access** - data that cannot be tied to an individual. This tier does not require user certification for data access
+.pull-left[
 
-- **Controlled access** - contains individually-unique data and information that could potentially be used to identify an individual. This tier requires user certification for data access
-  - An access control policy is in place for TCGA data to ensure that personally identifiable information is protected from unauthorized users
+The Open Access tier includes information which is not unique to an individual.  This includes information such as:
+
+- De-identified clinical and demographic data
+
+- Gene expression data
+
+- Copy number alterations in regions of the genome
+
+- Epigenetic data
+
+- Summaries of data
+
+]
+
+.pull-right[
+The Controlled Access tier includes information which is unique to an individual.  This includes raw data files, and some processed data:
+
+- Primary sequencing data (BAM and FASTQ files) from DNA, RNA, miRNA or bisulfite sequencing studies
+
+- Raw and processed SNP6 array data
+
+- Raw and processed Exon array data
+
+- Somatic and germline mutation calls for an individual (VCF and MAF files)
+]
 
 ---
 ## TCGA Controlled Access Data
 
-Access to controlled data is available to researchers who:
+[Access](https://gdc.cancer.gov/access-data/obtaining-access-controlled-data) to controlled data is available to researchers who:
 
-- Agree to restrict their use of the data to biomedical research purposes only
+- Agree to restrict their use of the data to biomedical research purposes
 
 - Agree with the rules outlined in the TCGA Data Use Certification (DUC)
 
@@ -134,7 +157,7 @@ Access to controlled data is available to researchers who:
 
 - Complete the Data Access Request (DAR) form and submit it to the Data Access Committee to be a TCGA Approved User
 
-https://gdc.cancer.gov/access-data/obtaining-access-controlled-data
+.center[ &lt;img src="img/dbGAP_TCGA.png" height = 200&gt; ]
 
 ---
 ## The Broad Institute Genome Data Analysis Center (GDAC) Firehose
@@ -149,6 +172,8 @@ https://gdc.cancer.gov/access-data/obtaining-access-controlled-data
 
 http://gdac.broadinstitute.org
 
+.center[ &lt;img src="img/firehose_logo.png" height = 70&gt; ]
+
 ---
 ## Firehose data access
 
@@ -162,6 +187,8 @@ http://gdac.broadinstitute.org
 
 http://firebrowse.org
 
+.center[ &lt;img src="img/firebrowse_logo.png" height = 110&gt; ]
+
 ---
 ## R programming language
 
@@ -173,6 +200,8 @@ http://firebrowse.org
 
 https://www.r-project.org
 
+.center[ &lt;img src="img/RCRAN.png" height = 250&gt; ]
+
 ---
 ## Bioconductor for data access and analysis
 
@@ -182,6 +211,7 @@ https://www.r-project.org
 
 https://bioconductor.org
 
+.center[ &lt;img src="img/bioconductor_frontpage.png" height = 250&gt; ]
 
 ---
 ## R resources to access TCGA data
@@ -350,6 +380,8 @@ https://docs.gdc.cancer.gov/API/Users_Guide/Getting_Started/#api-endpoints
 
 https://bioconductor.org/packages/GenomicDataCommons
 
+.center[ &lt;img src="img/gdc_logo.png" height = 70&gt; ]
+
 ---
 ## cBioPortal
 
@@ -374,7 +406,7 @@ https://docs.cbioportal.org/user-guide/overview - documentation, presentations, 
 - `cBioPortalData` R package providing access to the cBioPortal data
   - https://bioconductor.org/packages/cBioPortalData
 
-
+.center[ &lt;img src="img/cbioportal_logo.png" height = 70&gt; ]
 
 &lt;!--
 ## Other resources for cancer genomics
